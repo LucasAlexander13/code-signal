@@ -6,3 +6,7 @@ def add(param1, param2):
             return param1 + param2
     else:
         return "input too long"
+
+if __name__ == '__main__':
+    while True:
+        print(add(int(input('Enter a number: ')), int(input('Enter another one: '))))

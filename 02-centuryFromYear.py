@@ -10,3 +10,7 @@ def centuryFromYear(year):
     else:
         sec = int(sec + 1)
         return sec
+
+if __name__ == '__main__':
+    while True:
+        print(centuryFromYear(int(input('Enter a year: '))))
