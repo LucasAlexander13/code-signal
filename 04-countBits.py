@@ -15,12 +15,19 @@ def countBits(n):
         total = total // 2
         binario.append(str(restante))
 
-        if (total == 1):
-            binario.append("1")
-            
-    binario = "".join(binario)
+    if (total == 1):
+        binario.append("1")
+        binario = reverseString(binario)
+
     return len(binario)
+
+def reverseString(array):
+    array = ''.join(array[::-1])
+    print(array)
+    return array
+
 
 if __name__ == '__main__':
     while True:
-        print(countBits(int(input('Enter a number: '))))
+        number = int(input('Enter a number: '))
+        print(countBits(number))
