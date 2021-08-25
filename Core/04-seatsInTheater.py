@@ -4,3 +4,7 @@
 # behind you and in your column or to the left, assuming all 
 # seats are occupied.
 
+def seatsInTheater(nCols, nRows, col, row):
+    behind = nRows - row
+    left = nCols - col + 1
+    return behind * left
